@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+
+}
+  
+header{ 
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./benthota1.webp);
+    height: 100vh;    /*viewport height*/
+    background-size: cover;                    /*This contains all the information about the nav bar*/
+    background-position: center;
+   
+
+
+
+}
+
+header ul{
+    list-style: none;
+    float:right;              /*This contains all the information about the nav bar*/
+    
+}
+
+header ul li{ 
+    display: inline-block;  /*This contains all the information about the nav bar*/
+    position: relative;
+    margin-top: 25px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;           /*This contains all the information about the nav bar*/
+    border-radius: 12px;
+    transition: 0.6s ease;
+    display: block;
+    
+}
+
+header ul li a:hover{
+    background-color: #fff;                 /*This contains all the information about the nav bar*/
+    color: #000;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+
+}
+header ul li ul.dropdown li{
+    display: block;
+    margin-top: 0;
+
+}
+header ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: none;
+
+}
+  .logo img{
+      float: left;
+      width: 200px;                        /*This contains all the information about the nav bar an image*/
+      margin-top: -60px;
+      
+      
+  }
+  
+  .title{
+      position: absolute;
+      top: 70%;                                                  /*This contains all the information about the nav bar*/
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+  }
+  .turtlecattitle{
+        position: absolute;
+        top: 75%;
+        left: 45%;
+        color: #fff;
+        font-size: 20px;
+      
+      
+  }
+  .button{
+      position: absolute;
+      top: 83%;
+      left:50%;                                                 /*This contains all the information about the nav bar (BUTTONS)*/
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .btn{
+      border: 1px solid white;
+      border-radius: 12px;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+  
+  }
+  .btn:hover{
+      background-color: #fff;
+      color: #000;
+      transition: 0.6s ease;
+  
+    }
+
+
+    .three-columns-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    /* columns */
+    .three-columns-grid > * {
+        padding:1rem;
+    }
+
+
+
+  /* The flip card container - I set the width and height to whatever Is matching. I added the border property to demonstrate that the flip itself goes out of the box on hover... Perspective was added for 3D effect*/
+.flip-card {
+    position: relative;
+    left: 75px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px; 
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+     
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-inner img {
+    width: 300px;
+    height: 300px;
+  }
+  /* Does an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari anfd google */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-card-front {
+
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  
+  h2{
+      font-size: 50px;
+      text-align: center;
+      text-decoration: underline;
+      font-style: italic;
+      color: #fff;
+      text-shadow: 3px 3px black;
+  }
+
+
+      h3{
+        padding: 0.5%;
+        text-decoration: underline ;
+        font-style: italic;
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 3px 3px black;
+        text-align: center;
+  
+  }
+ 
+   h4{
+    padding: 0.5%;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    text-shadow: 3px 3px black;
+    
+
+   }
+  ul{
+      margin-left: 30px;
+      list-style-type: circle;
+      color: white;
+      list-style-type: disc;
+     
+   
+
+
+  }
+
+
+
+.bgcolor{
+    background-color: gray;
+
+
+}
+  p{
+      font-size: 20px;
+      padding: 3%;
+      color: #fff;
+      text-align: justify;
+  
+  }
+
+  hr {
+      position: relative;
+      top: 20px;
+      border: none;
+      height: 12px;
+      background: black;
+      margin-bottom: 50px;
+     
+
+  }
+
+.map{
+    
+   
+    padding: 30px;
+    align-items: center;
+}
+.top{
+
+    --offset: 70px; 
+    
+    position: sticky;
+    bottom: 20px;
+    left: 47%;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    background: black;
+    border-radius: 100px;
+    white-space: nowrap;
+
+}
+ 
+      footer{
+        background: rgba(39, 23, 23, 0.352);
+        height: auto;
+        width: 100vw;
+        font-family: "Open Sans";
+        padding-top: 40px;
+        color: #fff;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content h3{
+   font-size:1.8rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+}
+.footer-content p{
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 14px;
+}
+.footer-bottom{
+   background: black;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+
+}
+.footer-bottom p{
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+   text-align: center;
+
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+
+}
+.mobnav{
+    display: none;
+}
+
+
+@media screen and (max-width:1200px) {
+    /*SMALL SCREEN*/
+    header{
+        height: 68vh;
+
+    }
+    .title{
+        top: 40%;
+
+    }
+    .ani1{
+        text-align: center;
+        padding-left: 22%;
+        padding-right: 22%;
+    
+    }
+    .logo img{
+        float: left;
+        width: 200px;                        /*This contains all the information about the nav bar an image*/
+        margin-top: -60px;
+        margin-left: -35px;
+    }
+    .column{
+        width: 87%;
+        padding: auto;
+        
+    }
+    .intro{
+        font-size: 45px;
+        text-align: center;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .top{
+      left: 35%;
+    }
+    .turtlecattitle{
+      display: none;
+    }
+    .button{
+      display: none;
+    }
+    .map{
+        width: auto;
+        padding: 3%;
+    }
+    h2{
+       text-align: center;
+    }
+
+header ul {
+    display: none;
+  }
+  .mobnav{
+    display: block;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 3%;
+    margin: 5%;
+    
+  }
+  .mobnav ul{
+    list-style: none;
+
+ }
+ .flip-card {
+    position: relative;
+    left: 5px;
+    background-color: transparent;
+    width: 100px;
+    height: 100px; 
+    perspective: 1000px; /* Added to get the 3D effect when the animation is done */
+     
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-inner img {
+    width: 100px;
+    height: 100px;
+  }
+  /* This container does horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari  is added and google*/
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+}

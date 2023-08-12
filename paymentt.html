@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./paymentt.css" type="text/css">     <!--LInk sheet to css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+
+    <div class="logo">
+        <img src="./Untitleddesign.png" alt="logohydro">
+    </div>
+  
+<div class="title">
+  <img src="./Untitleddesign.png" alt="logohydro">
+</div>
+<div class="turtlecattitle">
+  3.PAYMENT PAGE     ----->     4.CONFIRMATION PAGE
+</div>
+<div class="button">
+         <a href="./details.html" class="btn">GO BACK</a>
+</div>
+
+
+</header>
+<div class="mobnav">
+  <ul>
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="./Turtlecategories.html">TURTLE CATEGORIES</a></li>
+    <li><a href="./hikkaduwaturtlehatchery.html">HIKKADUWA TURTLE HATCHERY</a></li>   <!--Contains the information for the navi bar-->
+    <li><a href="./turtlethreats.html">THREATS TO TURTLES</a></li>
+    <li><a href="#">OTHER TURTLE HATCHERIES</a>
+    <li><a href="./kosgoda.html">KOSGODA</a></li>    <!--Sub links for the other turtle hatcheries-->
+    <li><a href="./benthota.html">BENTOTA</a></li>    <!--Sub links for the other turtle hatcheries-->
+    <li><a href="./donatepage.html">PURCHASE AND DONATE</a></li>
+</ul>
+</div>
+    <!--<div class="bgcolor">-->
+    <br>
+    <br>
+   
+    <h2 class="intro">3. PAYMENT PAGE</h2>
+    <br>
+    <br>
+    <br>
+    <div class="boxc">
+        <div class="payment-content">
+        <h3>Updated Summary Table</h3>
+		<br>
+		<br>
+        <div class="summary-table">
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td id="paymentName"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td id="paymentMobile"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="paymentEmail"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="paymentGender"></td>
+                </tr>
+				<tr>
+                    <td>Date</td>
+                    <td id="summaryDate"></td>
+                </tr>
+				<tr>
+                    <td>Time</td>
+                    <td id="summaryTime"></td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td id="summaryDuration"></td>
+                </tr>
+				<tr>
+                    <td>Guest Amount And Prices</td>
+                    <td id="summaryTickets"></td>
+                </tr>
+				<tr>
+                    <td>Total Amount</td>
+                    <td id="summaryTotal"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+        
+        <br>
+    </div>
+	
+    <br>
+    <div class="boxc">
+    <p>FILL THE CREDIT OR DEBIT CARD INFORMATION PROPERLY!!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    
+      <br>
+      <br>
+	  <!-- ... (existing code) -->
+
+	  <div class="credit-card-form">
+		
+		<div class=form456><img src="./card_img.png" alt="Credit Card" class="card-image">
+		<h3>Payment Details</h3></div>
+		<form id="creditCardForm">
+			<!-- Inside the credit card form -->
+<label for="cardNumber">Card Number:</label>
+<input type="text" id="cardNumber" maxlength="16" required placeholder="**** **** **** ****">
+<span id="cardNumberError" class="error-message"></span>
+
+<label for="expiryDate">Expiry Date:</label>
+<input type="text" id="expiryDate" required placeholder="MM/YY" >
+<span id="expiryDateError" class="error-message"></span>
+
+<label for="cvc">CVC / CVV:</label>
+<input type="text" id="cvc" maxlength="4" required placeholder="***">
+<span id="cvcError" class="error-message"></span>
+	
+<label for="nameOnCard">Name on Card:</label>
+<input type="text" id="nameOnCard" required placeholder="Ex: Joe Mandela">
+<span id="nameOnCardError" class="error-message"></span>
+	<br>
+    <br>
+			<button type="submit" id="payButton" >Pay</button>
+		</form>
+	</div>
+
+<!-- ... (remaining code) -->
+
+      <br>
+        <footer>
+        <div class="footer-bottom">
+            <p> copyright &copy;2023 codeHydro. designed by <span>Rifkhan</span> </p>
+        </div>
+        </footer>
+
+        <script src="paymentt.js"></script>
+</body>
+</html>

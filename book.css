@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    box-sizing: border-box;
+
+  
+  }
+  
+  header{ 
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./new2.jpg);
+    height: 40vh;    /*viewport height*/
+    background-size: cover;                    /*This contains all the information about the nav bar*/
+    background-position: center;
+    
+   
+
+
+}
+
+header ul{
+    list-style: none;
+    float:right;              /*This contains all the information about the nav bar*/
+    
+}
+
+header ul li{ 
+    display: inline-block;  /*This contains all the information about the nav bar*/
+    position: relative;
+    margin-top: 25px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;           /*This contains all the information about the nav bar*/
+    border-radius: 12px;
+    transition: 0.6s ease;
+    display: block;
+    
+}
+
+header ul li a:hover{
+    background-color: #fff;                 /*This contains all the information about the nav bar*/
+    color: #000;
+}
+header ul li:hover ul.dropdown{
+    display: block;
+
+}
+header ul li ul.dropdown li{
+    display: block;
+    margin-top: 0;
+
+}
+header ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    display: none;
+
+} 
+.logo img{
+    float: left;
+    width: 100px;                        /*This contains all the information about the nav bar an image*/
+    margin-top: -60px;
+    
+    
+}
+
+  .title{
+      position: absolute;
+      top: 15%;                                                  /*This contains all the information about the nav bar*/
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+
+  }
+
+  .turtlecattitle{
+     position: absolute;
+     top: 21%;
+     left: 35%;
+     color: #fff;
+     font-size: 50px;
+  }
+      
+  .button{
+      position: absolute;
+      top: 8%;
+      left:8%;                                                 /*This contains all the information about the nav bar (BUTTONS)*/
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .btn{
+      border: 1px solid white;
+      border-radius: 12px;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      
+  
+  }
+  .btn:hover{
+      background-color: #fff;
+      color: #000;
+      transition: 0.6s ease;
+
+  }
+  p{
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    text-align: justify;
+  }
+ .dated{
+    border: #000;
+ }
+ .dated2{
+    padding: 3%;
+ }
+ .bg{
+    background-color: rgb(128, 177, 233);
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-bottom: 10%;
+    border-style: double;
+    
+ }
+.intro{ 
+    text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #030869;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #4474de,
+               1px 2px 0px #4474de,
+               1px 3px 0px #4474de,
+               1px 4px 0px #4474de,
+               1px 5px 0px #4474de,
+               1px 6px 0px #4474de,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+
+}
+  h2{
+    
+    text-align: center;
+    font-style: italic;
+}
+
+
+h3{
+text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #030869;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #4474de,
+  1px 2px 0px #4474de,
+  1px 3px 0px #4474de,
+  1px 4px 0px #4474de,
+  1px 5px 0px #4474de,
+  1px 6px 0px #4474de,
+  1px 10px 5px rgba(16, 16, 16, 0.5),
+  1px 15px 10px rgba(16, 16, 16, 0.4),
+  1px 20px 30px rgba(16, 16, 16, 0.3),
+  1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+.steps{
+    width: 700px;
+    height: 900px;
+    align-items: center;
+    margin: 26%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    border-style: double;
+    border-width: 7px;
+}
+.boxc{
+    background-color:rgb(128, 177, 233); 
+    border-radius: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+   
+    
+}
+.three-columns-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* columns */
+.three-columns-grid > * {
+    padding:1rem;
+}
+
+
+
+/* The flip card container - I set the width and height to whatever Is matching. I added the border property to demonstrate that the flip itself goes out of the box on hover... Perspective was added for 3D effect*/
+.flip-card {
+position: relative;
+left: 75px;
+background-color: transparent;
+width: 300px;
+height: 300px; 
+perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 1.5s;
+transform-style: preserve-3d;
+}
+.flip-card-inner img {
+width: 300px;
+height: 300px;
+}
+/* Does an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari anfd google */
+backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-card-front {
+
+background-color: #bbb;
+color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+
+background-color: rgb(128, 177, 233);;
+color: white;
+transform: rotateY(180deg);
+}
+.bgc{
+    background-color: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#guestForm {
+    margin-top: 20px;
+}
+
+input, select, button {
+    margin: 5px;
+}
+
+#guestList {
+    margin-top: 20px;
+}
+
+.Table {
+width: 100%;
+background-color: #d6e4ff;
+border-collapse: collapse;
+border-radius: 12px;
+border-width: 2px;
+border-color: #000000;
+border-style: double;
+color: #000000;
+}
+
+table.Table td{
+border-width: 2px;
+border-color: #000000;
+border-style: double;
+padding: 8px;
+font-size: 20px ;
+}
+table.Table th{
+border-width: 2px;
+border-color: #000000;
+border-style: double;
+padding: 8px;
+font-size: 30px;
+
+}
+
+table.Table thead {
+background-color: #7a90e6;
+}
+
+.tfooter{
+background-color: #7a90e6;
+text-align: center;
+}
