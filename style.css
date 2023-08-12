@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  
+  }
+  
+  header{ 
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./turtleimg1.jpg);
+      height: 100vh;    /*viewport height*/
+      background-size: cover;                    /*This contains all the information about the nav bar*/
+      background-position: center;
+     
+      
+  
+  
+  
+  }
+  
+  header ul{
+      list-style: none;
+      float:right;              /*This contains all the information about the nav bar*/
+      
+  }
+  
+  header ul li{ 
+      display: inline-block;  /*This contains all the information about the nav bar*/
+      position: relative;
+      margin-top: 25px;
+  }
+  
+  header ul li a{
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 20px;
+      border: 1px solid transparent;          /*This contains all the information about the nav bar*/
+      border-radius: 12px;
+      transition: 0.6s ease;
+      display: block;
+      
+  }
+  
+  header ul li a:hover{
+      background-color: #fff;                 /*This contains all the information about the nav bar*/
+      color: #000;
+  }
+  header ul li:hover ul.dropdown{
+      display: block;
+  
+  }
+  header ul li ul.dropdown li{
+      display: block;
+      margin-top: 0;
+  
+  }
+  header ul li ul.dropdown{
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      display: none;
+  
+  }
+  
+  .logo img{
+      float: left;
+      width: 200px;                        /*This contains all the information about the nav bar middle logo image*/
+      margin-top: -60px;
+      
+      
+  }
+  
+  .title{
+      position: absolute;
+      top: 70%;                                                  /*This contains all the information about the nav bar main logo*/
+      left:50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+      
+  }
+  .button{
+      position: absolute;
+      top: 80%;
+      left:50%;                                                 /*This contains all the information about the nav bar (BUTTONS)*/
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .btn{
+      border: 1px solid white;
+      border-radius: 12px;                                    /*This contains all the information about the nav bar (BUTTONS)*/
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+  
+  }
+  .btn:hover{
+      background-color: #fff;                            /*This contains all the information about the nav bar (BUTTONS) hover*/
+      color: #000;
+      transition: 0.6s ease;
+    
+  }.intro{ 
+    text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #030869;                       /*main color of letters added to the headings */
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #4474de,                          /*The introduction design font shades*/
+               1px 2px 0px #4474de,
+               1px 3px 0px #4474de,
+               1px 4px 0px #4474de,
+               1px 5px 0px #4474de,
+               1px 6px 0px #4474de,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);
+  
+  }
+  h2{
+      
+      text-align: center;
+      
+      font-style: italic;
+  }
+  
+  h3{
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      font-family: 'Roboto', sans-serif;
+      color: #030869;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 0px #4474de,
+      1px 2px 0px #4474de,
+      1px 3px 0px #4474de,
+      1px 4px 0px #4474de,
+      1px 5px 0px #4474de,
+      1px 6px 0px #4474de,
+      1px 10px 5px rgba(16, 16, 16, 0.5),
+      1px 15px 10px rgba(16, 16, 16, 0.4),
+      1px 20px 30px rgba(16, 16, 16, 0.3),
+      1px 25px 50px rgba(16, 16, 16, 0.2);
+  
+  
+  
+  }
+  h4{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 120;
+    font-family: 'Roboto', sans-serif;
+    color: #030869;
+    text-transform: uppercase;}
+   
+  
+  /* Three image containers used 25% for four, and 50% for two */
+  .column{
+      float: left;
+      width: 29.33%;
+      padding: 30px;                   
+      
+      
+  }
+  .column:hover {
+          transform: scale(1.2); /* To zoom image when on hover */
+          transition: 0.8s ease;
+          
+       
+        }
+  
+     
+  
+    
+    /* Clears all the floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      margin-top: -20%;
+      margin-bottom: -10%;
+     
+     
+      
+  
+  }
+  .bgcolor{
+      background-color: #c5dbfa;              /*Included in all pages backgroung color*/
+  
+  }
+  
+  p{
+      font-size: 20px;
+      padding-left: 5%;                                /*paragraph padding included in all files*/
+      padding-right: 5%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      text-align: justify;
+      
+      
+  
+  }
+  hr {
+      position: relative;
+      top: 20px;
+      border: none;
+      height: 12px;
+      background: black;
+      margin-bottom: 50px;
+  }
+  
+  .ollist{
+      margin-left: 3%;
+  }
+  .lists{
+      border: 3px solid blue;
+      padding: 3%;
+  }
+  .top{
+
+        --offset: 70px; 
+        
+        position: sticky;
+        bottom: 20px;
+        left: 47%;      
+        margin-right:10px; 
+        place-self: end;
+        margin-top: calc(100vh + var(--offset));      /*Go to offset sticker*/
+        
+        /* visual styling */
+        text-decoration: none;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: sans-serif;
+        color: #fff;
+        background: #040b8f;
+        border-radius: 100px;
+        white-space: nowrap;
+    }
+  
+  footer{
+       background: #2450ff;
+       height: auto;
+       width: 100vw;                         /*Contains the main elements and sizing of the footer*/
+       font-family: "Open Sans";
+       padding-top: 40px;
+       color: #fff;
+  
+  
+  
+  }
+  .footer-content{
+  display: flex;
+  align-items: center;                        /*Footer top light blue parts content*/
+  justify-content: center;                       
+  flex-direction: column;
+  text-align: center;
+  }
+  .footer-content h3{
+      font-size:1.8rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      line-height: 3rem;
+  }
+  .footer-content p{
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+  }
+  .footer-bottom{
+      background: darkblue;
+      width: 100vw;
+      padding: 20px 0;
+      text-align: center;
+  
+  }
+  .footer-bottom p{
+      font-size: 14px;
+      word-spacing: 2px;                                 /*Footer bottom dark blue parts content*/
+      text-transform: capitalize;
+      text-align: center;
+  
+  }
+  .footer-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+  
+  }
+  .ollist{
+      margin-left: 3%;
+  }
+  .lists{
+      border: 5px solid blue;
+      margin: 5%;
+      margin-bottom: 1%;
+      margin-top: 1%;
+      
+    
+  }
+  .mobnav{
+    display: none;
+
+  }
+
+
+@media screen and (max-width:1200px) {
+      
+     
+      header{
+          height: 68vh;
+          background-attachment: scroll;
+          background-repeat: initial;
+  
+      }
+      .title{
+          top: 40%;
+  
+      }
+      .button{
+          position: absolute;
+          top: 50%;
+          left:50%;                                                 /*This contains all the information about the nav bar (BUTTONS)*/
+          transform: translate(-50%,-50%);
+          color: #fff;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .logo img{
+          float: left;
+          width: 200px;                        /*This contains all the information about the nav bar an image*/
+          margin-top: -60px;
+          margin-left: -35px;
+      }
+      .column{
+          width: 87%;
+          padding: auto;
+          
+      }
+      .intro{
+          font-size: 45px;
+      }
+      h3{
+          font-size: 30px;
+      }
+      .top{
+        left: 35%;
+      }
+      .button{
+        display: none;
+      }
+      header ul {
+        display: none;
+      }
+      .mobnav{
+        display: block;
+        text-align: center;
+        background-color: #c5dbfa;
+        color: white;
+        padding: 3%;
+        margin: 5%;
+        
+      }
+      .mobnav ul{
+        list-style: none;
+      }
+
+  
+  
+    }
+
+
+
+
+    /*Most of the comments written here are relavant for all the pages.. As the develepor check the noted dictionary for class comments*/
